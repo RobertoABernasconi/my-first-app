@@ -10,3 +10,15 @@
 <div>
     <p *ngFor="let number of numbers">{{number}}</p>
 </div>
+<hr>
+<div class = "row">
+    <div class = "column">
+        <input type = "number" name = "horoscope" [(ngModel)]="horoscope">
+    </div>
+    <div class = "column" [ngSwitch]="horoscope">
+        <p *ngSwitchCase="1">Fortuna in amore</p>
+        <p *ngSwitchCase="2">Fortuna in soldi</p>
+        <p *ngSwitchCase="3">Sfortuna in amore</p>
+        <p *ngSwitchCase="4">Sfortuna in soldi</p>
+    </div>
+</div>

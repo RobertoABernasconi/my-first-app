@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { Component, TemplateRef } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   imports: [
-    //RouterOutlet,
+    CommonModule,
+    FormsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -15,6 +17,7 @@ export class AppComponent {
   picturePath: string = "icon.png";
   currentText = '';
   numbers = ['uno', 'due', 'tre', 'quattro', 'cinque'];
+  horoscope = 0;
   check($event: MouseEvent) {
     const buttonClicked = $event.target as HTMLInputElement;
     if (this.currentText == 'disattiva') {
