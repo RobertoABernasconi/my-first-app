@@ -18,6 +18,7 @@ export class AppComponent {
   currentText = '';
   numbers = ['uno', 'due', 'tre', 'quattro', 'cinque'];
   horoscope = 0;
+  highlightColour = 'white';
   check($event: MouseEvent) {
     const buttonClicked = $event.target as HTMLInputElement;
     if (this.currentText == 'disattiva') {
@@ -32,6 +33,10 @@ export class AppComponent {
 
   increment() {
     this.count++;
+  }
+
+  changeColour(colour: string) {
+    this.highlightColour = colour;
   }
 
 }
