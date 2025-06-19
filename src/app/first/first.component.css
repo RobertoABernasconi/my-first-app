@@ -1,0 +1,35 @@
+h1 {
+    font-size: 15px;
+}
+
+p {
+    max-width: 10vh;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+body {
+    background-color: lightblue;
+    max-width: 34vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    color: red;
+    background-color: pink;
+}
+
+.green {
+    color: green;
+    background-color: lightgreen;
+}
+
+.blue {
+    color: blue;
+    background-color: lightblue;
+}

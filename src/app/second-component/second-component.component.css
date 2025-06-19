@@ -1,0 +1,30 @@
+body {
+    background-color: plum;
+    text-align: center;
+}
+
+p {
+    font-size: xx-large;
+    padding: 2vh;
+    text-align: center;
+    color: white;
+}
+
+button {
+    padding: 2vh;
+    margin: 2vh;
+}
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: large;
+}
+
+td {
+    border: 1px solid white;
+    text-align: center;
+    padding: 55px;
+    min-width: 140px;
+}

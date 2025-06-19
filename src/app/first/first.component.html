@@ -1,0 +1,50 @@
+<body>
+    <img [src]="picturePath" alt="failed">
+    <h1>{{title}}</h1>
+    <input type="text" (input)="passValueToComponent($event)" placeholder="Scrivi qui">
+    <button (click)="check($event)">Controllo</button>
+    <h1>{{currentText}}</h1>
+    <hr>
+    <button (click)="increment()">Click me!</button>
+    <p>Count: {{ count }}</p>
+    <hr>
+    <div>
+        <p *ngFor="let number of numbers">{{number}}</p>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="column">
+            <input type="number" name="horoscope" [(ngModel)]="horoscope">
+        </div>
+        <div class="column" [ngSwitch]="horoscope">
+            <p *ngSwitchCase="1"><span [ngClass]="{
+                red: highlightColour === 'red',
+                green: highlightColour === 'green',
+                blue: highlightColour === 'blue',
+            }">Fortuna in amore</span></p>
+            <p *ngSwitchCase="2"><span [ngClass]="{
+                red: highlightColour === 'red',
+                green: highlightColour === 'green',
+                blue: highlightColour === 'blue',
+            }">Fortuna in soldi</span></p>
+            <p *ngSwitchCase="3"><span [ngClass]="{
+                red: highlightColour === 'red',
+                green: highlightColour === 'green',
+                blue: highlightColour === 'blue',
+            }">Sfortuna in amore</span></p>
+            <p *ngSwitchCase="4"><span [ngClass]="{
+                red: highlightColour === 'red',
+                green: highlightColour === 'green',
+                blue: highlightColour === 'blue',
+            }">Sfortuna in soldi</span></p>
+            <p *ngSwitchDefault><span [ngClass]="{
+                red: highlightColour === 'red',
+                green: highlightColour === 'green',
+                blue: highlightColour === 'blue',
+            }">Scegli un numero da 1 a 4 per avere l'oroscopo</span></p>
+        </div>
+        <button (click)="changeColour('red')">Red</button>
+        <button (click)="changeColour('green')">Green</button>
+        <button (click)="changeColour('blue')">Blue</button>
+    </div>
+</body>
