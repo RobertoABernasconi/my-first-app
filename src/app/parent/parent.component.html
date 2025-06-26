@@ -1,0 +1,9 @@
+<p>The word of the day is: {{ptext}}</p>
+<p>Filter words by category:</p>
+<button (click)="setCategory('Default')">All</button>
+<button (click)="setCategory('Fruit')">Fruit</button>
+<button (click)="setCategory('Bird')">Bird</button>
+<button (click)="setCategory('Vehicle')">Vehicle</button>
+<app-child 
+[words] = "categoryForChild"
+(eventEmitter) = "receiveMessage($event)"/>

@@ -1,0 +1,11 @@
+div {
+    padding: 20px;
+}
+
+p {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 100px;
+    margin: 10px;
+}
